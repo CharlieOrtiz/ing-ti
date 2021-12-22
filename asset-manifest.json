@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/ing-ti/static/css/main.58075b12.css",
-    "main.js": "/ing-ti/static/js/main.9f50a45f.js",
+    "main.js": "/ing-ti/static/js/main.a72fc95b.js",
     "static/media/us-banner.jpg": "/ing-ti/static/media/us-banner.44007c4468150059ce43.jpg",
     "static/media/ti-mision.jpg": "/ing-ti/static/media/ti-mision.93f3b5e1149e80248399.jpg",
     "static/media/ti-vision.jpg": "/ing-ti/static/media/ti-vision.288e7937c41ea8e4ef72.jpg",
     "index.html": "/ing-ti/index.html",
     "main.58075b12.css.map": "/ing-ti/static/css/main.58075b12.css.map",
-    "main.9f50a45f.js.map": "/ing-ti/static/js/main.9f50a45f.js.map"
+    "main.a72fc95b.js.map": "/ing-ti/static/js/main.a72fc95b.js.map"
   },
   "entrypoints": [
     "static/css/main.58075b12.css",
-    "static/js/main.9f50a45f.js"
+    "static/js/main.a72fc95b.js"
   ]
 }
