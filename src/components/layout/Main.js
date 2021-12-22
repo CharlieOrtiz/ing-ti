@@ -1,13 +1,13 @@
 import React from "react";
-import Us from "./Us";
-import Services from "./Services";
-import Contact from "./Contact";
-import Clients from "./Clients";
+import Us from "../Sections/Us";
+import Services from "../Sections/Services";
+import Contact from "../Sections/Contact";
+import Clients from "../Sections/Clients";
 import { Routes, Route } from "react-router-dom";
 
 export default function Main() {
 	return (
-		<div>
+		<div className="container-medium main-container">
 			<Routes>
 				<Route
 					path="/"
