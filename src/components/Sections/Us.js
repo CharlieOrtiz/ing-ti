@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Header from "./Header";
 import { values } from "../../api/data";
 import misionImage from "../../img/layout/Us/ti-mision.jpg";
 import visionImage from "../../img/layout/Us/ti-vision.jpg";
 
 export default function Us() {
+	const valuesContainer = useRef();
+	const [valuesOnScreen, setValuesOnScreen] = useState(false);
+
+	useEffect(() => {
+		const observer = new IntersectionObserver(function (entries) {
+			if (entries[0].isIntersecting === true) {
+				setValuesOnScreen(true);
+			}
+		}, { threshold: [1] });
+
+		observer.observe(valuesContainer.current);
+	}, [valuesOnScreen]);
+
 
 	return (
 		<>
@@ -52,14 +65,13 @@ export default function Us() {
 					</div>
 				</div>
 				<div className="us-subsection">
-					<div className="values-container">
+					<div className="values-container" ref={valuesContainer}>
 						<h3>Valores</h3>
-						<ul className="two-items-column">
+						<ul className={`two-items-column ${valuesOnScreen ? 'values-on-screen' : ''}`}>
 							{
 								values.map((val, index) => (
 									<li key={index}>
-										<img src={val.img} alt="" />
-										<h5>{val.name}</h5>
+										<h5 className="value-name">{val.name}</h5>
 									</li>
 								))
 							}
