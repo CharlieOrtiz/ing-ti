@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Header from "./Header";
-import { values } from "../../api/data";
+import { values } from "../../static/data";
 import misionImage from "../../img/layout/Us/ti-mision.jpg";
 import visionImage from "../../img/layout/Us/ti-vision.jpg";
 

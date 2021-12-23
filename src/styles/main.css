@@ -199,6 +199,12 @@ p, span, label, a, select {
     color: var(--white);
 }
 
+/* Landing */
+.landing-container {
+    height: 100vh;
+    background-image: radial-gradient(rgb(0, 0, 255), rgb(0, 0, 0));
+}
+
 /* Us */
 .us-container {
     margin-top: calc(2em + 25px + 25px + 35px); /* h1Size + paddingTop + paddingTop + marginBottom */
