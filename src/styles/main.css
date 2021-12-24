@@ -73,6 +73,7 @@ html, body {
     --hardGray: #676767;
     --linksHoverColor: rgb(27, 43, 134);
     --footerBackground: #303030;
+    --bannerColor: rgb(1, 120, 255);
     /* MEASURES */
     --pageWidth: 1200px;
 }
@@ -130,11 +131,13 @@ p, span, label, a, select {
 .header {
     height: 70px;
     width: 100%;
-    background: var(--hardBlue);
+    /*background: var(--hardBlue);*/
+    background-color: var(--white);
     position: fixed;
     top: 0;
     left: 0;
-    padding: 0 calc((100% - var(--pageWidth))/2);;
+    padding: 0 calc((100% - var(--pageWidth))/2);
+    box-shadow: 1px 1px 16px 0 #9a9a9a;
     z-index: 1000;
 }
 
@@ -163,7 +166,8 @@ p, span, label, a, select {
 }
 
 .nav li:hover {
-    background-color: var(--linksHoverColor);
+    /*background-color: var(--linksHoverColor);*/
+    background-color: var(--bannerColor);
     margin-top: -1px;
 }
 
@@ -172,7 +176,7 @@ p, span, label, a, select {
 }
 
 .nav-link {
-    color: var(--white);
+    /*color: var(--white);*/
     display: inline-block;
     width: 100%;
     height: 100%;
@@ -202,7 +206,7 @@ p, span, label, a, select {
 /* Landing */
 .landing-container {
     height: 100vh;
-    background-image: radial-gradient(rgb(0, 0, 255), rgb(0, 0, 0));
+    background-image: radial-gradient(var(--bannerColor), var(--hardBlue));
 }
 
 /* Us */

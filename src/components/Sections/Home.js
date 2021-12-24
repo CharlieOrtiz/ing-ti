@@ -11,7 +11,10 @@ export default function Home() {
 		console.log(container);
 	};
 	return (
-		<>
+        <>
+            <div>
+                {/* go here the home text */}
+            </div>
 			<Particles
 				id="tsparticles"
 				options={particlesConfig}
