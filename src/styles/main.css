@@ -209,6 +209,25 @@ p, span, label, a, select {
     background-image: radial-gradient(var(--bannerColor), var(--hardBlue));
 }
 
+.banner-text-container {
+    width: 45%;
+    height: calc((100vh - 70px) * .8);
+    position: absolute;
+    left: 0;
+    top: calc(((100vh - 70px) * .10) + 70px);
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 30px calc((100% - var(--pageWidth)) / 2);
+    border-radius: 0 15px 15px 0;
+}
+
+.banner-text-container * {
+    color: var(--white);
+}
+
+.banner-text-container *:not(:last-child) {
+    margin-bottom: 15px;
+}
+
 /* Us */
 .us-container {
     margin-top: calc(2em + 25px + 25px + 35px); /* h1Size + paddingTop + paddingTop + marginBottom */

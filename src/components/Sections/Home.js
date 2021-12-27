@@ -11,14 +11,18 @@ export default function Home() {
 		console.log(container);
 	};
 	return (
-        <>
-            <div>
-                {/* go here the home text */}
-            </div>
-			<Particles
-				id="tsparticles"
-				options={particlesConfig}
-			/>
+		<>
+			<div className="container banner-text-container">
+				<h1>
+					Brindamos asesoría en materia de contabilidad gubernamental.
+				</h1>
+				<p>
+					Implementamos las reglas de operación necesarias para la
+					implantación y el cumplimiento de las reglas de la contabilidad
+					gubernamental, dictadas por la CONAC.
+				</p>
+			</div>
+			<Particles id="tsparticles" options={particlesConfig} />
 		</>
 	);
 }
