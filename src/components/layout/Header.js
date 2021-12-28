@@ -31,6 +31,11 @@ export default function Header() {
 							Contacto
 						</Link>
 					</li>
+					<li>
+						<Link to="/soporte" className="nav-link">
+							Soporte
+						</Link>
+					</li>
 				</ul>
 			</nav>
 		</header>

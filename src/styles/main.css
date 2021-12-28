@@ -216,7 +216,7 @@ p, span, label, a, select {
     left: 0;
     top: calc(((100vh - 70px) * .10) + 70px);
     background-color: rgba(0, 0, 0, 0.3);
-    padding: 30px calc((100% - var(--pageWidth)) / 2);
+    padding: 30px 30px 30px calc((100% - var(--pageWidth)) / 2);
     border-radius: 0 15px 15px 0;
 }
 
@@ -307,6 +307,21 @@ p, span, label, a, select {
 
 .values-on-screen li:nth-child(even) {
     margin-left: 55%;
+}
+
+/* --- SUPPORT --- */
+.support-container {
+    height: 100vh;
+    background-color: var(--bannerColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Entry */
+.login-container {
+    padding: 20px 15px;
+    background-color: var(--white);
+    border-radius: 10px;
 }
 
 /* FOOTER */
