@@ -116,11 +116,16 @@ h5 {
     font-size: 1.2em;
 }
 
-p, span, label, a, select {
+p, span, label, a, select, input {
     font-family: "Mukta", Helvetica, Arial, sans-serif;
     font-size: 1.1em;
     font-weight: 300;
     color: var(--hardGray);
+}
+
+input.form-control, button.btn {
+    font-family: "Mukta", Helvetica, Arial, sans-serif;
+    font-size: 1.1em;
 }
 
 .app {
@@ -180,12 +185,15 @@ p, span, label, a, select {
     display: inline-block;
     width: 100%;
     height: 100%;
+    padding: 0;
+    color: var(--hardGray);
 }
 
 /* - MAIN - */
 .main-container {
     padding: calc(70px + 20px) calc((100vw - var(--pageWidth)) / 2) 20px;
     width: 100%;
+    min-height: 100vh;
    /* margin: 0 auto; */
 }
 
@@ -205,7 +213,6 @@ p, span, label, a, select {
 
 /* Landing */
 .landing-container {
-    height: 100vh;
     background-image: radial-gradient(var(--bannerColor), var(--hardBlue));
 }
 
@@ -311,17 +318,30 @@ p, span, label, a, select {
 
 /* --- SUPPORT --- */
 .support-container {
-    height: 100vh;
     background-color: var(--bannerColor);
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 /* Entry */
 .login-container {
-    padding: 20px 15px;
+    padding: 25px 15px;
     background-color: var(--white);
     border-radius: 10px;
+    box-shadow: 3px 3px 4px rgb(0 0 0 / 40%);
+}
+
+.form-login-container>*:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.login-form>*:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.login-container a {
+    color: var(--bannerColor);
 }
 
 /* FOOTER */
