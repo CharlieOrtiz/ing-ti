@@ -2,23 +2,22 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 
-export const LoginForm = ({
+export const ResetPasswordForm = ({
 	handleOnChange,
-	handleOnSubmit,
+	handleOnResetSubmit,
 	email,
-	password,
 	switchForm,
 }) => {
 	return (
 		<Container className="container-short form-login-container">
 			<Row>
 				<Col>
-					<h2>Client Login</h2>
+					<h2>Recuperar contraseña</h2>
 					<hr />
 					<Form
 						className="login-form"
 						autoComplete="off"
-						onSubmit={handleOnSubmit}
+						onSubmit={handleOnResetSubmit}
 					>
 						<Form.Group>
 							<Form.Label>Correo electrónico</Form.Label>
@@ -31,18 +30,7 @@ export const LoginForm = ({
 								required
 							/>
 						</Form.Group>
-						<Form.Group>
-							<Form.Label>Contraseña</Form.Label>
-							<Form.Control
-								type="password"
-								name="password"
-								value={password}
-								onChange={handleOnChange}
-								placeholder="Contraseña"
-								required
-							/>
-						</Form.Group>
-						<Button type="submit">Login</Button>
+						<Button type="submit">Enviar</Button>
 					</Form>
 				</Col>
 			</Row>
@@ -50,20 +38,17 @@ export const LoginForm = ({
 				<Col>
 					<a href="#!" onClick={(e) => {
 						e.preventDefault();
-						switchForm('reset');
-					}}>
-						¿Olvidaste tu contraseña?
-					</a>
+						switchForm('login');
+					}}>Iniciar Sesión</a>
 				</Col>
 			</Row>
 		</Container>
 	);
 };
 
-LoginForm.propTypes = {
+ResetPasswordForm.propTypes = {
 	handleOnChange: PropTypes.func.isRequired,
-	handleOnSubmit: PropTypes.func.isRequired,
+	handleOnResetSubmit: PropTypes.func.isRequired,
 	switchForm: PropTypes.func.isRequired,
 	email: PropTypes.string.isRequired,
-	password: PropTypes.string.isRequired,
 };
